@@ -19,7 +19,7 @@ uint32_t ui32GetSpeed_M_S( uint32_t ui32Radius_cm ,uint32_t ui32NUMofSLOTS,uint3
 {
 	/* Calculates speed based on counter value and disk radius and number of slots and the interval time of the pulses count */
 	uint32_t ui32Speed = 0;
-	ui32Speed = (2*314*vGetCounterValue())/(ui32NUMofSLOTS*ui32intervalTime_ms);						// the equation that results in the speed value
+	ui32Speed = (2*314.0*vGetCounterValue())/(ui32NUMofSLOTS*ui32intervalTime_ms);						// the equation that results in the speed value
 	return ui32Speed;
 }
 uint32_t ui32Convert_MStoKmH(uint32_t ui32Speed )
