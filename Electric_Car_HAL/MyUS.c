@@ -4,7 +4,7 @@
 
 
 
-volatile unsigned long ** arr;
+volatile unsigned long ** Arr;
 volatile unsigned long * PD[8]={PD0,PD1,PD2,PD3,PD4,PD5,PD6,PD7};
 volatile unsigned long * PA[8]={PA0,PA1,PA2,PA3,PA4,PA5,PA6,PA7};
 volatile unsigned long * PB[8]={PB0,PB1,PB2,PB3,PB4,PB5,PB6,PB7};
@@ -45,12 +45,12 @@ void EN_PORT_CLK(GPIOA_Type* PORT_Name) // return PD or PF ....
 
 
 void get_GPIO_Num(GPIOA_Type* PORT_Name){
-  if	(PORT_Name == GPIOA)		arr=PA;
-	else if	(PORT_Name == GPIOB)	arr=PB;
-	else if	(PORT_Name == GPIOC)	arr=PC;
-	else if	(PORT_Name == GPIOD)	arr=PD;
-	else if	(PORT_Name == GPIOE)	arr=PE;
-	else if	(PORT_Name == GPIOF)	arr=PF;
+  if	(PORT_Name == GPIOA)		Arr=PA;
+	else if	(PORT_Name == GPIOB)	Arr=PB;
+	else if	(PORT_Name == GPIOC)	Arr=PC;
+	else if	(PORT_Name == GPIOD)	Arr=PD;
+	else if	(PORT_Name == GPIOE)	Arr=PE;
+	else if	(PORT_Name == GPIOF)	Arr=PF;
 	
 
 }
